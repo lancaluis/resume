@@ -23,6 +23,7 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li`
   color: #ffffff;
+  transition: color 1s ease-in-out;
 `
 
 export const Brand = styled.h1`
@@ -33,21 +34,5 @@ export const Brand = styled.h1`
   span {
     color: #7b78ff;
     font-size: 1.3rem;
-  }
-`
-
-export const Button = styled.button`
-  padding: 0.8rem 1rem;
-  border: 1px solid #7b78ff;
-  border-radius: 7px;
-  background: none;
-  color: #ffffff;
-  transition: background-color 0.5s ease-in-out;
-  font-weight: bold;
-  margin-left: 3rem;
-  
-  &&:hover {
-    cursor: pointer;
-    background: #7b78ff;
   }
 `

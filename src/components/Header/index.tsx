@@ -1,4 +1,6 @@
-import { Wrapper, Navbar, NavList, NavItem, Brand, Button } from "./styles"
+import Button from "../Button"
+
+import { Wrapper, Navbar, NavList, NavItem, Brand } from "./styles"
 
 function Header() {
   return (
@@ -12,7 +14,7 @@ function Header() {
           <NavItem>work xp</NavItem>
           <NavItem>projects</NavItem>
           <NavItem>
-            <Button>download cv</Button>
+            <Button />
           </NavItem>
         </NavList>
       </Navbar>
