@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { NavLink } from "react-router-dom"
 
 export const Wrapper = styled.header`
   background: #090909;
@@ -11,6 +12,10 @@ export const Navbar = styled.nav`
   width: 80%;
   margin: 0 auto;
   padding: 2rem;
+
+  .active{
+    color:  #7b78ff;
+  }
 `
 
 export const NavList = styled.ul`
@@ -24,6 +29,11 @@ export const NavList = styled.ul`
 export const NavItem = styled.li`
   color: #ffffff;
   transition: color 1s ease-in-out;
+`
+
+export const Link = styled(NavLink)`
+  text-decoration: none;
+  color: #ffffff;
 `
 
 export const Brand = styled.h1`
