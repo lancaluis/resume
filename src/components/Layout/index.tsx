@@ -1,3 +1,5 @@
+// import { FC } from "react"
+
 import GlobalStyle from "../../styles/globalStyles"
 import Footer from "../Footer"
 import Header from "../Header"

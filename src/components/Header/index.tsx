@@ -17,7 +17,7 @@ const LINKS = [
   },
 ]
 
-function Header() {
+const Header = () => {
   return (
     <Wrapper>
       <Navbar>

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from "styled-media-query";
 import { NavLink } from "react-router-dom"
 
 export const Wrapper = styled.header`
@@ -11,11 +12,20 @@ export const Navbar = styled.nav`
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 0;
 
   .active{
     color:  #7b78ff;
   }
+
+  ${media.lessThan("medium")`
+    flex-direction: column;
+    gap: 2rem;
+    
+    button {
+      display: none;
+    }
+  `}
 `
 
 export const NavList = styled.ul`
@@ -45,4 +55,12 @@ export const Brand = styled.h1`
     color: #7b78ff;
     font-size: 1.3rem;
   }
+
+  ${media.lessThan("medium")`
+    font-size: 1rem;
+    
+    span {
+      font-size: 1.1rem;
+  }
+  `}
 `

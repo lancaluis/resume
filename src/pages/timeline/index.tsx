@@ -1,7 +1,11 @@
-import { Wrapper } from "./styles"
+import VerticalTimeline from "../../components/Timeline"
 
 const Timeline = () => {
-  return <Wrapper>Work XP Page</Wrapper>
+  return (
+    <>
+      <VerticalTimeline />
+    </>
+  )
 }
 
 export default Timeline

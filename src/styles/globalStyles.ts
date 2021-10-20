@@ -9,21 +9,6 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
-  body {
-    ::-webkit-scrollbar {
-      width: 20px;
-    }
-    ::-webkit-scrollbar-track {
-      background-color: #090909;
-    }
-    ::-webkit-scrollbar-thumb {
-      border: 5px solid transparent;
-      border-radius: 100px;
-      background-color: #7b78ff;
-      background-clip: content-box;
-    } 
-  }
-
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
