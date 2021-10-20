@@ -34,6 +34,10 @@ export const NavList = styled.ul`
   list-style: none;
   gap: 1.5rem;
   letter-spacing: 0.1rem;
+
+  ${media.lessThan("medium")`
+    gap: 1.2rem;
+  `}
 `
 
 export const NavItem = styled.li`
@@ -61,6 +65,6 @@ export const Brand = styled.h1`
     
     span {
       font-size: 1.1rem;
-  }
+    }
   `}
 `
