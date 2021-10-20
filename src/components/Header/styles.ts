@@ -35,7 +35,7 @@ export const NavList = styled.ul`
   gap: 1.5rem;
   letter-spacing: 0.1rem;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("small")`
     gap: 1.2rem;
   `}
 `
