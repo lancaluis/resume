@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
   body,
   #root {
     height: 100%;
+    background: #090909;
   }
 
   html, body, div, span, applet, object, iframe,
