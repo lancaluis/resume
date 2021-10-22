@@ -1,32 +1,33 @@
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component"
+} from "react-vertical-timeline-component";
 
-import { Star } from "@styled-icons/material"
+import { Star } from "@styled-icons/material";
 
-import TimelineEvent from "../../components/Timeline"
+import TimelineEvent from "../../components/Timeline";
 
 const EVENTS = [
   {
     title: "Front-end Developer",
     company: "Hi Platform",
     date: "Dec 2019 - present",
-    description: "Description",
+    description: "Ok, being a programmer is not just writing code, we also have to think out of the box to create the best experience for the customers.",
     type: "work",
   },
   {
     title: "Mobile Developer",
     company: "Viceri",
     date: "Jul to Nov 2019",
-    description: "Description",
+    description:
+      "I really like to work with CSS, but I was thinking. Should I try to create mobile apps? Hmm, react native sounds interesting...",
     type: "work",
   },
   {
     title: "Front-end Developer",
     company: "Viceri",
     date: "Nov 2018 to Jun 2019",
-    description: "Description",
+    description: "I never forget the day where I met CSS. Thanks world, for share it with me",
     type: "work",
   },
   {
@@ -43,7 +44,7 @@ const EVENTS = [
     description: "My first job was fixing computers. Let me format your PC!",
     type: "work",
   },
-]
+];
 
 const Timeline = () => {
   return (
@@ -63,7 +64,7 @@ const Timeline = () => {
         icon={<Star />}
       />
     </VerticalTimeline>
-  )
-}
+  );
+};
 
-export default Timeline
+export default Timeline;
