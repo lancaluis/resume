@@ -35,6 +35,10 @@ export const NavList = styled.ul`
   gap: 1.5rem;
   letter-spacing: 0.1rem;
 
+  button {
+    margin-left: 3rem;
+  }
+
   ${media.lessThan("small")`
     gap: 1.2rem;
   `}

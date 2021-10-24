@@ -8,4 +8,5 @@ export const Wrapper = styled.footer`
   color: #ffffff;
   font-weight: 300;
   font-size: 0.8rem;
+  margin-top: 2rem;
 `

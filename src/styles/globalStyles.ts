@@ -30,6 +30,11 @@ const GlobalStyle = createGlobalStyle`
     font: inherit;
     vertical-align: baseline;
     font-family: 'Montserrat', sans-serif;
+
+    &::selection {
+      color: #fff;
+      background: #7b78ff;
+    }
   }
   /* HTML5 display-role reset for older browsers */
   article, aside, details, figcaption, figure, 

@@ -10,7 +10,6 @@ const DownloadBtn = styled.button`
   color: #ffffff;
   transition: background-color 0.5s ease-in-out;
   font-weight: bold;
-  margin-left: 3rem;
 
   &&:hover {
     cursor: pointer;
