@@ -59,11 +59,22 @@ export const Description = styled.div`
 `;
 
 export const Skills = styled.div`
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 
   ${media.lessThan("medium")`
+    justify-content: center;
+  `} */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 60px);
+  grid-column-gap: 5rem;
+  grid-row-gap: 2rem;
+
+  ${media.lessThan("medium")`
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 3rem;
     justify-content: center;
   `}
 `;
@@ -71,6 +82,7 @@ export const Skills = styled.div`
 export const SectionTitle = styled.h2`
   font-size: 1.5rem;
   font-weight: bold;
+  line-height: 1.4;
 
   ${media.greaterThan("medium")`
     &:before {

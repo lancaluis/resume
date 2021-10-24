@@ -9,6 +9,8 @@ import {
   Css3,
   Javascript,
   Git,
+  Amazonaws,
+  Github,
 } from "@styled-icons/simple-icons/";
 
 import {
@@ -70,6 +72,16 @@ const SKILLS = [
     color: "",
   },
   {
+    icon: <Github />,
+    label: "Github",
+    color: "",
+  },
+  {
+    icon: <Amazonaws />,
+    label: "AWS",
+    color: "",
+  },
+  {
     icon: <Figma />,
     label: "Figma",
     color: "",
@@ -90,7 +102,7 @@ const About = () => {
         <Button />
       </Description>
 
-      <SectionTitle>Technologies I most used</SectionTitle>
+      <SectionTitle>Technologies and tools I have been used</SectionTitle>
       <Skills>
         {SKILLS.map(({ icon, color, label }, key) => (
           <Skill key={key} color={color} label={label} icon={icon}></Skill>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import media from "styled-media-query";
 
 import { StyledIconBase } from "@styled-icons/styled-icon";
 
@@ -11,10 +10,7 @@ export const Wrapper = styled.div`
   padding: 1rem 1.2rem;
   background: #0e0e0e;
   border-radius: 5px;
-
-  ${media.lessThan("medium")`
-    width: 60px;
-  `}
+  width: 60px;
 `;
 
 export const Icon = styled.div`
