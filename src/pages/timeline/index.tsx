@@ -1,9 +1,4 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-
-import { Star } from "@styled-icons/material";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 
 import TimelineEvent from "../../components/Timeline";
 
@@ -12,7 +7,8 @@ const EVENTS = [
     title: "Front-end Developer",
     company: "Hi Platform",
     date: "Dec 2019 - present",
-    description: "Ok, being a programmer is not just writing code, we also have to think out of the box to create the best experience for the customers.",
+    description:
+      "Ok, being a programmer is not just writing code, we also have to think out of the box to create the best experience for the customers.",
     type: "work",
   },
   {
@@ -27,7 +23,8 @@ const EVENTS = [
     title: "Front-end Developer",
     company: "Viceri",
     date: "Nov 2018 to Jun 2019",
-    description: "I never forget the day where I met CSS. Thanks world, for share it with me",
+    description:
+      "I never forget the day where I met CSS. Thanks world, for share it with me",
     type: "work",
   },
   {
@@ -59,10 +56,6 @@ const Timeline = () => {
           type={type}
         />
       ))}
-      <VerticalTimelineElement
-        iconStyle={{ background: "#7b78ff", color: "#ffffff" }}
-        icon={<Star />}
-      />
     </VerticalTimeline>
   );
 };
