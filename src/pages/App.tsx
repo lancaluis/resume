@@ -7,7 +7,7 @@ import About from "./about"
 import Timeline from "./timeline"
 import Projects from "./projects"
 
-const TRACKING_ID = "G-19BS6Y8P7R"
+const TRACKING_ID =  process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none"
 ReactGA.initialize(TRACKING_ID)
 
 const App = () => {
