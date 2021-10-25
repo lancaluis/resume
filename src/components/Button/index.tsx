@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import ReactGA from 'react-ga'
 
 import { saveAs } from "file-saver"
 
@@ -18,6 +19,10 @@ const DownloadBtn = styled.button`
 `
 
 const downloadFile = () => {
+  ReactGA.event({
+    category: 'Download',
+    action: 'Download cv'
+  });
   saveAs("/files/luis_lanca.pdf", "luis_lanca.pdf")
 }
 
