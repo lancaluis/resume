@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import media from "styled-media-query";
+
+import mediaQueries from "../../utils/mediaQueries";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -10,7 +11,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   color: #ffffff;
 
-  ${media.lessThan("medium")`
+  ${mediaQueries.lessThan("tablet")`
     width: 100%;
     gap: 1.5rem;
 
@@ -20,10 +21,14 @@ export const Wrapper = styled.div`
     }
   `}
 
-  ${media.greaterThan("medium")`
+  ${mediaQueries.greaterThan("tablet")`
     button {
       display: none;
     }
+  `}
+
+  ${mediaQueries.greaterThan("largeDesktop")`
+    width: 50%;
   `}
 `;
 
@@ -45,6 +50,10 @@ export const Subtitle = styled.h2`
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.4;
+
+  ${mediaQueries.lessThan("tablet")`
+    text-align: center;
+  `}
 `;
 
 export const Description = styled.div`
@@ -52,27 +61,19 @@ export const Description = styled.div`
   flex-direction: column;
   width: 60%;
 
-  ${media.lessThan("medium")`
+  ${mediaQueries.lessThan("tablet")`
     width: 100%;
     align-items: center;
   `}
 `;
 
 export const Skills = styled.div`
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-
-  ${media.lessThan("medium")`
-    justify-content: center;
-  `} */
-
   display: grid;
   grid-template-columns: repeat(auto-fill, 60px);
   grid-column-gap: 5rem;
   grid-row-gap: 2rem;
 
-  ${media.lessThan("medium")`
+  ${mediaQueries.lessThan("tablet")`
     grid-template-columns: repeat(2, auto);
     grid-column-gap: 3rem;
     justify-content: center;
@@ -84,14 +85,7 @@ export const SectionTitle = styled.h2`
   font-weight: bold;
   line-height: 1.4;
 
-  ${media.greaterThan("medium")`
-    &:before {
-      content: "👉";
-      margin-right: 0.6rem;
-    }
-  `}
-
-  ${media.lessThan("medium")`
+  ${mediaQueries.lessThan("tablet")`
     margin-bottom: 1rem;
     text-align: center;
   `}

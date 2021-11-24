@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import media from "styled-media-query";
 import { NavLink } from "react-router-dom"
+
+import mediaQueries from "../../utils/mediaQueries";
 
 export const Wrapper = styled.header`
   background: #090909;
@@ -18,13 +19,17 @@ export const Navbar = styled.nav`
     color:  #7b78ff;
   }
 
-  ${media.lessThan("medium")`
+  ${mediaQueries.lessThan("tablet")`
     flex-direction: column;
     gap: 2rem;
     
     button {
       display: none;
     }
+  `}
+
+  ${mediaQueries.greaterThan("largeDesktop")`
+    width: 50%;
   `}
 `
 
@@ -39,7 +44,7 @@ export const NavList = styled.ul`
     margin-left: 3rem;
   }
 
-  ${media.lessThan("small")`
+  ${mediaQueries.lessThan("tablet")`
     gap: 1.2rem;
   `}
 `
@@ -64,7 +69,7 @@ export const Brand = styled.h1`
     font-size: 1.3rem;
   }
 
-  ${media.lessThan("medium")`
+  ${mediaQueries.lessThan("tablet")`
     font-size: 1rem;
     
     span {

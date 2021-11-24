@@ -11,6 +11,7 @@ import {
   Git,
   Amazonaws,
   Github,
+  Googleanalytics,
 } from "@styled-icons/simple-icons/";
 
 import {
@@ -79,6 +80,11 @@ const SKILLS = [
   {
     icon: <Amazonaws />,
     label: "AWS",
+    color: "",
+  },
+  {
+    icon: <Googleanalytics />,
+    label: "Analytics",
     color: "",
   },
   {

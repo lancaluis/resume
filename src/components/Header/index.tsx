@@ -1,21 +1,8 @@
-import Button from "../Button"
+import Button from "../Button";
 
-import { Wrapper, Navbar, NavList, NavItem, Brand, Link } from "./styles"
+import LINKS from "../../utils/navbarLinks";
 
-const LINKS = [
-  {
-    url: "about",
-    label: "about me",
-  },
-  {
-    url: "timeline",
-    label: "work xp",
-  },
-  {
-    url: "projects",
-    label: "projects",
-  },
-]
+import { Wrapper, Navbar, NavList, NavItem, Brand, Link } from "./styles";
 
 const Header = () => {
   return (
@@ -36,7 +23,7 @@ const Header = () => {
         </NavList>
       </Navbar>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
