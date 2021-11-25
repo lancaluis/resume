@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.footer`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 2rem;
   background: #0e0e0e;
   color: #ffffff;
