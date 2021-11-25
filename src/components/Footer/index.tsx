@@ -17,5 +17,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// Insert GA to track some information

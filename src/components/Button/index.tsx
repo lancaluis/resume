@@ -1,6 +1,8 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-import { saveAs } from "file-saver"
+import { saveAs } from "file-saver";
+
+import { eventGA } from "../../utils/reactGA";
 
 const DownloadBtn = styled.button`
   padding: 0.8rem 1rem;
@@ -15,14 +17,15 @@ const DownloadBtn = styled.button`
     cursor: pointer;
     background: #7b78ff;
   }
-`
+`;
 
 const downloadFile = () => {
-  saveAs("/files/luis_lanca.pdf", "luis_lanca.pdf")
-}
+  eventGA("download-resume", "buttonAction");
+  saveAs("/files/luis_lanca.pdf", "luis_lanca.pdf");
+};
 
 const Button = () => {
-  return <DownloadBtn onClick={downloadFile}>download cv</DownloadBtn>
-}
+  return <DownloadBtn onClick={downloadFile}>download cv</DownloadBtn>;
+};
 
-export default Button
+export default Button;

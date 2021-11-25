@@ -12,3 +12,13 @@ export const initGA = () => {
 export const trackingPageGA = (page: string) => {
   ReactGA.pageview(page);
 };
+
+export const eventGA = (categoryName: string, eventName: string) => {
+  ReactGA.event({
+    category: categoryName, // Required
+    action: eventName, // Required
+    label: "labelName",
+    value: 10,
+    nonInteraction: false,
+  });
+};
