@@ -1,11 +1,23 @@
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 
-import Layout from "../components/Layout"
+import ReactGA from "react-ga";
 
-import About from "./about"
-import Timeline from "./timeline"
+import Layout from "../components/Layout";
+
+import About from "./about";
+import Timeline from "./timeline";
+
+const env: string = (process.env.REACT_APP_GOOGLE_ANALYTICS_TRACKING_ID as string)
 
 const App = () => {
+
+  ReactGA.initialize(env);
+
   return (
     <Router>
       <Layout>
@@ -20,7 +32,7 @@ const App = () => {
         </Switch>
       </Layout>
     </Router>
-  )
-}
+  );
+};
 
-export default App
+export default App;
