@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import {
   Wrapper,
   BolderText,
@@ -11,8 +13,14 @@ import Skill from "../../components/SkillCard";
 import Button from "../../components/Button";
 
 import SKILLS from "../../utils/skills";
+import { initGA, trackingPageGA } from "../../utils/reactGA";
 
 const About = () => {
+  useEffect(() => {
+    initGA();
+    trackingPageGA("/about");
+  }, []);
+
   return (
     <Wrapper>
       <Description>

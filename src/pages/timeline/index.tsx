@@ -1,6 +1,10 @@
+import { useEffect } from "react";
+
 import { VerticalTimeline } from "react-vertical-timeline-component";
 
 import TimelineEvent from "../../components/Timeline";
+
+import { initGA, trackingPageGA } from "../../utils/reactGA";
 
 const EVENTS = [
   {
@@ -44,6 +48,10 @@ const EVENTS = [
 ];
 
 const Timeline = () => {
+  useEffect(() => {
+    initGA();
+    trackingPageGA("/timeline");
+  }, []);
   return (
     <VerticalTimeline>
       {EVENTS.map(({ title, company, date, description, type }, key) => (
