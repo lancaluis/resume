@@ -21,7 +21,7 @@ const DownloadBtn = styled.button`
 
 const downloadFile = () => {
   eventGA("download-resume", "buttonAction");
-  saveAs("/files/luis_lanca.pdf", "luis_lanca.pdf");
+  saveAs("/files/luis_lanca.pdf", "luis-lanca.pdf");
 };
 
 const Button = () => {
