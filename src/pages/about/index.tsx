@@ -26,10 +26,10 @@ const About = () => {
       <Description>
         <BolderText>Hey!</BolderText>
         <Subtitle>
-          I'm Luís. Front-end Developer passionate about UX/UI Design, always
-          delivering user friendly interfaces thinking about E-accessibility.
-          Since 2019 I have been working from non-conventional locations,
-          experiencing different cultures and looking for new life experiences.
+         My name is Luís. I'm a Digital Nomad who works as Front-end Developer since 2018, my current focus 
+         is to create interactive and responsive layouts from scratch, delivering user friendly interfaces thinking 
+         about E-accessibility and SEO. I also design layouts for web and mobile apps, landing pages or just simple
+         websites, always using concepts of UX Design, although we create software for humans, right?
         </Subtitle>
         <Button />
       </Description>
