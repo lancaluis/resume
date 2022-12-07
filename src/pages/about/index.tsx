@@ -28,8 +28,7 @@ const About = () => {
         <Subtitle>
          My name is Luís. I'm a Digital Nomad who works as Front-end Developer since 2018, my current focus 
          is to create interactive and responsive layouts from scratch, delivering user friendly interfaces thinking 
-         about E-accessibility and SEO. I also design layouts for web and mobile apps, landing pages or just simple
-         websites, always using concepts of UX Design, although we create software for humans, right?
+         about E-accessibility and SEO. I also like to study UX/UI Design, although we create software for humans, right?
         </Subtitle>
         <Button />
       </Description>
