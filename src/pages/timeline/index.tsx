@@ -9,8 +9,16 @@ import { initGA, trackingPageGA } from "../../utils/reactGA";
 const EVENTS = [
   {
     title: "Front-end Developer",
+    company: "Alter Solutions Portugal",
+    date: "Jun 2022 - Oct 2022",
+    description:
+      "Work in Europe? Sounds good, why not? Let's conquer the world!",
+    type: "work",
+  },
+  {
+    title: "Front-end Developer",
     company: "Hi Platform",
-    date: "Dec 2019 - present",
+    date: "Dec 2019 - Mar 2022",
     description:
       "Ok, being a programmer is not just writing code, we also have to think out of the box to create the best experience for the customers.",
     type: "work",
