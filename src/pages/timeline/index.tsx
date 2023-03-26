@@ -9,6 +9,14 @@ import { initGA, trackingPageGA } from "../../utils/reactGA";
 const EVENTS = [
   {
     title: "Front-end Developer",
+    company: "Ingresse",
+    date: "Jan 2023 - Present",
+    description:
+      "Back to Brazil! It's time to embrace new challenges in the events market",
+    type: "work",
+  },
+  {
+    title: "Front-end Developer",
     company: "Alter Solutions Portugal",
     date: "Jun 2022 - Oct 2022",
     description:
