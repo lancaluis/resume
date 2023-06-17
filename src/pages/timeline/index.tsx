@@ -68,8 +68,9 @@ const Timeline = () => {
     initGA();
     trackingPageGA("/timeline");
   }, []);
+  // lineColor="rgba(221, 146, 80, 0.3)"
   return (
-    <VerticalTimeline lineColor="rgba(221, 146, 80, 0.3)">
+    <VerticalTimeline>
       {EVENTS.map(({ title, company, date, description, type }, key) => (
         <TimelineEvent
           key={key}
