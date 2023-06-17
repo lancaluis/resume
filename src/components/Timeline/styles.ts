@@ -24,6 +24,9 @@ export const Info = styled.p`
   font-size: 0.9rem !important;
   margin: 0.5rem 0 1rem 0 !important;
 `
+export const Description = styled.p`
+  font-size: 0.9rem !important;
+`
 
 export const Icon = styled.div`
   ${StyledIconBase} {

@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
   body,
   #root {
     height: 100%;
-    background: #090909;
+    background: #182622;
   }
 
   html, body, div, span, applet, object, iframe,
@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
 
     &::selection {
       color: #fff;
-      background: #7b78ff;
+      background: #dd9250;
     }
   }
   /* HTML5 display-role reset for older browsers */

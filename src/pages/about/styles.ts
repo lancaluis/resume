@@ -49,6 +49,7 @@ export const BolderText = styled.h1`
 export const Subtitle = styled.h2`
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  font-weight: 400;
   line-height: 1.4;
 
   ${mediaQueries.lessThan("tablet")`

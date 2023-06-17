@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 import mediaQueries from "../../utils/mediaQueries";
 
 export const Wrapper = styled.header`
-  background: #090909;
+  background: #182622;
 `
 
 export const Navbar = styled.nav`
@@ -16,7 +16,7 @@ export const Navbar = styled.nav`
   padding: 2rem 0;
 
   .active{
-    color:  #7b78ff;
+    color:  #dd9250;
   }
 
   ${mediaQueries.lessThan("tablet")`
@@ -65,7 +65,7 @@ export const Brand = styled.h1`
   font-weight: 500;
 
   span {
-    color: #7b78ff;
+    color: #dd9250;
     font-size: 1.3rem;
   }
 

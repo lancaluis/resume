@@ -6,7 +6,7 @@ export const Wrapper = styled.footer`
   justify-content: space-between;
   align-items: center;
   padding: 2rem 10%;
-  background: #0e0e0e;
+  background: #182622;
   color: #ffffff;
   font-weight: 300;
   font-size: 0.8rem;

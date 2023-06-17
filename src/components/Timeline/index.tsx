@@ -1,16 +1,16 @@
-import "react-vertical-timeline-component/style.min.css"
+import "react-vertical-timeline-component/style.min.css";
 
-import { School, Work } from "@styled-icons/material"
+import { School, Work } from "@styled-icons/material";
 
-import { Title, Info, VerticalTimelineCustomElement } from "./styles"
+import { Title, Info, VerticalTimelineCustomElement, Description } from "./styles";
 
 type TimelineProps = {
-  date: string
-  title: string
-  company: string
-  description: string
-  type: string
-}
+  date: string;
+  title: string;
+  company: string;
+  description: string;
+  type: string;
+};
 
 const TimelineEvent = ({
   date,
@@ -21,17 +21,21 @@ const TimelineEvent = ({
 }: TimelineProps): JSX.Element => {
   return (
     <VerticalTimelineCustomElement
-      contentStyle={{ background: "#0e0e0e", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid #0e0e0e" }}
+      contentStyle={{ background: "#1d2c28", color: "#fff" }}
+      contentArrowStyle={{ borderRight: "7px solid #1d2c28" }}
       date={date}
-      iconStyle={{ background: "#7b78ff", color: "#ffffff" }}
+      iconStyle={{
+        background: "#182622",
+        color: "#ffffff",
+        boxShadow: "0 0 0 4px rgba(221, 146, 80, 1)",
+      }}
       icon={type === "work" ? <Work /> : <School />}
     >
       <Title>{title}</Title>
       <Info>{company}</Info>
-      <p>{description}</p>
+      <Description>{description}</Description>
     </VerticalTimelineCustomElement>
-  )
-}
+  );
+};
 
-export default TimelineEvent
+export default TimelineEvent;

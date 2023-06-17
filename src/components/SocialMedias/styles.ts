@@ -9,7 +9,7 @@ export const SocialMedia = styled.ul`
 
 export const Icon = styled.div`
   ${StyledIconBase} {
-    color: #7b78ff;
+    color: #ffffff;
     width: 20px;
   }
 `;

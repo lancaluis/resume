@@ -3,7 +3,7 @@ import { StyledIconProps } from 'styled-icons/types';
 import { Wrapper, Icon } from "./styles";
 
 type SkillCardProps = {
-  icon: StyledIconProps;
+  icon: StyledIconProps | string;
   label: string;
   color: string;
 };

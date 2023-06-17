@@ -9,7 +9,9 @@ import {
   Css3,
   Javascript,
   Git,
+  Vercel,
   Amazonaws,
+  Wordpress,
   Github,
   Googleanalytics,
 } from "@styled-icons/simple-icons/";
@@ -46,6 +48,16 @@ const SKILLS = [
     color: "",
   },
   {
+    icon: <Vercel />,
+    label: "Next.Js",
+    color: "",
+  },
+  {
+    icon: <Wordpress />,
+    label: "Wordpress",
+    color: "",
+  },
+  {
     icon: <Jest />,
     label: "Jest",
     color: "",
@@ -67,7 +79,7 @@ const SKILLS = [
   },
   {
     icon: <Amazonaws />,
-    label: "AWS",
+    label: "CloudFront",
     color: "",
   },
   {

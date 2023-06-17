@@ -6,7 +6,7 @@ import { eventGA } from "../../utils/reactGA";
 
 const DownloadBtn = styled.button`
   padding: 0.8rem 1rem;
-  border: 1px solid #7b78ff;
+  border: 1px solid #dd9250;
   border-radius: 7px;
   background: none;
   color: #ffffff;
@@ -15,13 +15,13 @@ const DownloadBtn = styled.button`
 
   &&:hover {
     cursor: pointer;
-    background: #7b78ff;
+    background: #dd9250;
   }
 `;
 
 const downloadFile = () => {
   eventGA("download-resume", "buttonAction");
-  saveAs("/files/luis_lanca.pdf", "luis-lanca.pdf");
+  saveAs("/files/luis-lanca.pdf", "luis-lanca.pdf");
 };
 
 const Button = () => {

@@ -7,15 +7,15 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 1rem 1.2rem;
-  background: #0e0e0e;
+  padding: 1rem 1.4rem;
+  background: #1d2c28;
   border-radius: 5px;
   width: 60px;
 `;
 
 export const Icon = styled.div`
   ${StyledIconBase} {
-    color: ${(props) => (props.color ? props.color : "#7b78ff")};
+    color: ${(props) => (props.color ? props.color : "#dd9250")};
     width: 30px;
   }
 `;
