@@ -54,7 +54,7 @@ export const skills = [
     description: "Utility-first CSS framework for styling",
   },
   {
-    name: "Shadcdn UI",
+    name: "Shadcn UI",
     icon: "shadcn",
     style: "text-indigo-500 hover:shadow-indigo-500",
     description: "Customizable UI components for React",
