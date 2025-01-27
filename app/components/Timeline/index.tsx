@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { TIMELINE } from "@/content/timeline";
 
-const TimelineItem = ({ item, index }: { item: any; index: number }) => {
+const TimelineItem = ({ item, index }: { item: { title: string; description: string; year: string}; index: number }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true, // Apenas uma vez por item

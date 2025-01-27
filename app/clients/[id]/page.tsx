@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 
 import Link from "next/link"
 import Image from "next/image"
-import { useParams } from "next/navigation"
 
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
@@ -33,7 +32,7 @@ export default function ProjectPage() {
     }, 5000)
 
     return () => clearInterval(timer)
-  }, [project])
+  }, [])
 
   if (!project) {
     return <div>Projeto não encontrado</div>

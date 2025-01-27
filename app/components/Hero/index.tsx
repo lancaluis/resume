@@ -41,7 +41,7 @@ const Hero = () => {
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
         className="text-3xl md:text-4xl font-bold mb-2"
       >
-        Hello, I'm Luís Lança
+        Hello, I&apos;m Luís Lança
       </motion.h1>
       <motion.p
         initial={{ y: 50 }}

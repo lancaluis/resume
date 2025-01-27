@@ -2,15 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
-import { useState } from "react";
 
 const DownloadCV = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState<string>("en");
 
   const handleDownload = () => {
-    const cvUrls = {
-      en: "/luislanca.pdf",
-    };
     window.open('/luislanca.pdf', "_blank");
   };
 

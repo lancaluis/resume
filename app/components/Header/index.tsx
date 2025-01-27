@@ -1,7 +1,5 @@
 "use client";
 
-import { LanguageController } from "@/components";
-
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-base-200 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
