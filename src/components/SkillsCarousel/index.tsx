@@ -4,8 +4,8 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-import { SkillsCarousel } from "@/components";
-import { SKILLS } from "@/constants";
+import { SkillsCarousel } from "..";
+import { SKILLS } from "../../constants";
 
 const Skills = () => {
   const controls = useAnimation();

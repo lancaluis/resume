@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { PlaceTemplate as PlaceTemplateProps } from "@/types";
+import { PlaceTemplate as PlaceTemplateProps } from "../../types";
 import { ArrowLeft } from "lucide-react";
 
 export default function PlaceTemplate({ place }: PlaceTemplateProps) {

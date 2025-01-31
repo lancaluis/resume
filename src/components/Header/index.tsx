@@ -3,14 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { NAVBAR_LINKS } from "@/constants";
+import { NAVBAR_LINKS } from "../../constants";
 
 const Header = () => {
   const pathName = usePathname();
   return (
     <header className="sticky top-0 z-50 w-full border-b border-base-100 bg-gray-900 backdrop-blur supports-[backdrop-filter]:bg-gray-900/60">
       <div className="flex h-20 items-center justify-around">
-        <div className="text-lg font-bold text-gray-300">Luís Lança</div>
+        <div className="text-lg font-bold text-gray-300 hidden md:block">Luís Lança</div>
         <nav className="flex items-center gap-8">
           {NAVBAR_LINKS.map((link) => (
             <Link

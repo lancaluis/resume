@@ -3,8 +3,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-import { Skill } from "@/types";
-import { ICONS } from "@/constants";
+import { Skill } from "../../../types";
+import { ICONS } from "../../../constants";
 
 interface SkillsCarouselProps {
   skills: Skill[];

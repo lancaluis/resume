@@ -3,7 +3,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { DownloadCV, Timeline } from "@/components";
+import { DownloadCV, Timeline } from "..";
 
 const FadeInWhenVisible = ({ children }: { children: React.ReactNode }) => {
   const controls = useAnimation();

@@ -1,10 +1,10 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { Places } from "@/types";
+import { Places } from "../../types";
 
 const Map = dynamic(
-  () => import("@/components/Map").then((component) => component.Map),
+  () => import(".").then((component) => component.Map),
   {
     ssr: false,
     loading: () => (

@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import { TIMELINE } from "@/constants";
-import { TimelineItem as Item } from "@/types";
+import { TIMELINE } from "../../constants";
+import { TimelineItem as Item } from "../../types";
 
 interface TimelineItemProps {
   item: Item;
