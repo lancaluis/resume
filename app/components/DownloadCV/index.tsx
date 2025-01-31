@@ -20,7 +20,7 @@ const DownloadCV = () => {
       <div className="flex justify-center items-center flex-col md:flex-row">
         <button
           onClick={handleDownload}
-          className="flex items-center gap-2 btn btn-outline w-[90%] md:w-auto"
+          className="flex items-center gap-2 btn btn-outline w-[90%] md:w-auto text-gray-200"
         >
           Download CV
           <Download className="h-6 w-6" />

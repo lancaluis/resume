@@ -31,7 +31,7 @@ const SkillsCarousel = ({
         className="flex-shrink-0 w-[280px] mx-2"
       >
         <div
-          className={`overflow-hidden h-full transition-all duration-300 ease-in-out rounded-lg bg-transparent border border-base-200 hover:shadow-sm ${skill.style}`}
+          className={`overflow-hidden h-full transition-all duration-300 ease-in-out rounded-lg bg-transparent border border-base-100 hover:shadow-sm ${skill.style}`}
         >
           <div className="p-4">
             <div className="flex items-center mb-1">

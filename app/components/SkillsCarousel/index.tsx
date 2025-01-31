@@ -30,7 +30,7 @@ const Skills = () => {
           hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
         }}
-        className="text-3xl font-bold mb-8 text-center"
+        className="text-3xl font-bold mb-8 text-center text-gray-200"
       >
         Skills
       </motion.h2>

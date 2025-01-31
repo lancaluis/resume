@@ -2,9 +2,9 @@ import { Github, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-base-200">
+    <footer className="border-t border-base-100">
       <div className="flex flex-col sm:flex-row justify-around items-center py-8">
-        <p className="text-sm text-gray-400 mb-4 sm:mb-0">
+        <p className="text-sm text-gray-300 mb-4 sm:mb-0">
           {new Date().getFullYear()} &copy; Luís Lança
         </p>
         <div className="flex space-x-6">
@@ -12,7 +12,7 @@ const Footer = () => {
             href="https://github.com/lancaluis"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-gray-300"
+            className="text-gray-300 hover:text-gray-200"
           >
             <Github className="h-6 w-6" />
           </a>
@@ -20,7 +20,7 @@ const Footer = () => {
             href="https://linkedin.com/in/lancaluis"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-gray-300"
+            className="text-gray-300 hover:text-gray-200"
           >
             <Linkedin className="h-6 w-6" />
           </a>
@@ -28,7 +28,7 @@ const Footer = () => {
             href="https://instagram.com/nopiqueviajante"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-gray-300"
+            className="text-gray-300 hover:text-gray-200"
           >
             <Instagram className="h-6 w-6" />
           </a>

@@ -23,23 +23,23 @@ const Hero = () => {
           alt="Profile picture"
           width={200}
           height={200}
-          className="rounded-full border-4 border-primary-content relative z-10"
+          className="rounded-full border-4 border-gray-100 relative z-10"
         />
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 0.5 }}
-          className="flex items-center gap-1 absolute z-10 -bottom-0 right-0 bg-black text-primary rounded-full px-2 py-1 border-2 border-primary-content"
+          className="flex items-center gap-1 absolute z-10 -bottom-0 right-0 bg-gray-900 text-primary rounded-full px-2 py-1 border-2 border-gray-100"
         >
-          <MapPin className="w-4 h-4 text-gray-300" />
-          <span className="text-sm text-gray-300">Brazil</span>
+          <MapPin className="w-4 h-4 text-gray-100" />
+          <span className="text-sm text-gray-100">Brazil</span>
         </motion.div>
       </motion.div>
       <motion.h1
         initial={{ y: -50 }}
         animate={{ y: 0 }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className="text-3xl md:text-4xl font-bold mb-2"
+        className="text-3xl md:text-4xl font-bold mb-2 text-gray-100"
       >
         Hello, I&apos;m Luís Lança
       </motion.h1>
@@ -56,7 +56,7 @@ const Hero = () => {
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 1.5 }}
       >
-        <ChevronsDown className="h-8 w-8 text-gray-300" />
+        <ChevronsDown className="h-8 w-8 text-gray-200" />
       </motion.div>
     </motion.section>
   );

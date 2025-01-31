@@ -37,15 +37,15 @@ const About = () => {
   return (
     <section id="about" className="max-w-4xl mx-auto px-6">
       <FadeInWhenVisible>
-        <h2 className="text-3xl font-bold mb-8 text-center">About me</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-gray-200">About me</h2>
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
         <p className="text-gray-400 text-justify md:text-center mb-10 md:mb-10 px-6">
-          I’m a passionate Software Engineer with{" "}
+          I’m a passionate Software Engineer with
           <span className="font-bold text-gray-300">over 7 years of experience</span>, specializing
           in front-end development and creating user-centric, high-performing digital experiences.
-          I thrive on clean, maintainable code and have a{" "}
+          I thrive on clean, maintainable code and have a
           <span className="font-bold text-gray-300">
             strong focus on usability, performance, and scalable solutions
           </span>

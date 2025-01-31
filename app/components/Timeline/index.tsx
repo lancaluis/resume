@@ -8,8 +8,8 @@ import { TIMELINE } from "@/content/timeline";
 const TimelineItem = ({ item, index }: { item: { title: string; description: string; year: string}; index: number }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: true, // Apenas uma vez por item
-    threshold: 0.2, // Porcentagem visível para ativar
+    triggerOnce: true,
+    threshold: 0.2,
   });
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const TimelineItem = ({ item, index }: { item: { title: string; description: str
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
-          fill="currentColor"
+          fill="#d1d5db"
           className="h-5 w-5"
         >
           <path
@@ -49,11 +49,11 @@ const TimelineItem = ({ item, index }: { item: { title: string; description: str
         className={`${index % 2 === 0 ? "timeline-start md:text-end" : "timeline-end"
           } pb-8`}
       >
-        <time className="font-mono italic">{item.year}</time>
-        <div className="text-lg font-black">{item.title}</div>
+        <time className="font-mono italic text-gray-200">{item.year}</time>
+        <div className="text-lg font-black text-gray-200">{item.title}</div>
         <p className="text-gray-400">{item.description}</p>
       </div>
-      {index < TIMELINE.length - 1 && <hr />}
+      {index < TIMELINE.length - 1 && <hr className="bg-gray-500" />}
     </motion.li>
   );
 };

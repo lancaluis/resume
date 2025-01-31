@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <Analytics />
       <SpeedInsights />
-      <body className={`${geistMono.variable}`}>
+      <body className={`${geistMono.variable} bg-gray-900`}>
         <Header />
         <main>{children}</main>
         <Footer />
