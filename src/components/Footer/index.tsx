@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="border-t border-base-100 bg-gray-900">
       <div className="flex flex-col sm:flex-row justify-around items-center py-8">
         <p className="text-sm text-gray-300 mb-4 sm:mb-0">
-          {new Date().getFullYear()} &copy; Luís Lança
+          2025 &copy; Luís Lança
         </p>
         <div className="flex space-x-6">
           <a
