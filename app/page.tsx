@@ -2,7 +2,7 @@ import { About, Hero, Skills } from "@/components";
 
 const Home = () => {
   return (
-    <div className="space-y-14">
+    <div className="space-y-12">
       <Hero />
       <About />
       <Skills />
