@@ -1,5 +1,11 @@
 import PlaceTemplate from "@/components/Map/MapWrapper";
 import { getPlaces } from "@/services/hygraph";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Luís Lança - Travel Journal & Digital Nomad Adventures",
+  description: "Exploring the world while working remotely. Travel journal, digital nomad lifestyle, and remote work insights.",
+};
 
 const Trips = async () => {
   const { places } = await getPlaces();

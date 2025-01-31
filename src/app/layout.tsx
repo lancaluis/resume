@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luís Lança - Software Engineer",
-  description: "Personal website showcasing my professional career and lifestyle",
+  title: "Luís Lança - Software Engineer & Digital Nomad",
+  description:
+    "Building technology while traveling the world. Remote work, software engineering, React, TypeScript, Next.js, and the digital nomad lifestyle.",
 };
 
 export default function RootLayout({
@@ -27,7 +28,9 @@ export default function RootLayout({
     <html lang="en">
       <Analytics />
       <SpeedInsights />
-      <body className={`${geistMono.variable} bg-gray-900 h-screen flex flex-col`}>
+      <body
+        className={`${geistMono.variable} bg-gray-900 h-screen flex flex-col`}
+      >
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
