@@ -2,7 +2,7 @@ import PlaceTemplate from "@/components/Map/MapWrapper";
 import { getPlaces } from "@/graphql/client";
 
 const Trips = async () => {
-  const { places } = await getPlaces();
+  const places = await getPlaces();
 
   return (
     <div className="container mx-auto my-8">
@@ -11,7 +11,7 @@ const Trips = async () => {
         <p className="text-gray-300">Choose a place and travel with me</p>
       </div>
       <div className="border border-base-100 p-4 2px rounded-md">
-        <PlaceTemplate places={places} />
+        <PlaceTemplate places={places?.places} />
       </div>
     </div>
   );
