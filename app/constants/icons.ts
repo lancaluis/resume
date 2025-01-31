@@ -21,7 +21,7 @@ import {
   SiJavascript,
 } from "react-icons/si";
 
-export const Icons = {
+export const ICONS = {
   react: SiReact,
   nodejs: SiNodedotjs,
   typescript: SiTypescript,

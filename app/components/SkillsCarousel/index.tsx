@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 import { SkillsCarousel } from "@/components";
-import { skills } from "@/constants/skills";
+import { SKILLS } from "@/constants";
 
 const Skills = () => {
   const controls = useAnimation();
@@ -36,7 +36,7 @@ const Skills = () => {
       </motion.h2>
 
       <div className="w-full">
-        <SkillsCarousel skills={skills} />
+        <SkillsCarousel skills={SKILLS} />
       </div>
     </section>
   );

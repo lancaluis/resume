@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Map, Tent } from "lucide-react";
+
+import { NAVBAR_LINKS } from "@/constants";
 
 const Header = () => {
   const pathName = usePathname();
@@ -11,32 +12,26 @@ const Header = () => {
       <div className="flex h-20 items-center justify-around">
         <div className="text-lg font-bold text-gray-300">Luís Lança</div>
         <nav className="flex items-center gap-8">
-          <Link
-            href="/"
-            className="text-gray-300 hover:text-gray-100 transition-colors duration-300 relative group flex items-center gap-1"
-            aria-label="Home"
-          >
-            <Tent className="w-6 h-6" />
-            Home
-            <span
-              className={`absolute -bottom-1 left-0 h-0.5 bg-gray-300 transition-all duration-300 ${
-                pathName === "/" ? "w-full" : "w-0 group-hover:w-full"
-              }`}
-            />
-          </Link>
-          <Link
-            href="/trips"
-            className="text-gray-300 hover:text-gray-100 transition-colors duration-300 relative group flex items-center gap-1"
-            aria-label="Trips"
-          >
-            <Map className="w-6 h-6" />
-            Trips
-            <span
-              className={`absolute -bottom-1 left-0 h-0.5 bg-gray-300 transition-all duration-300 ${
-                pathName.startsWith("/trips") ? "w-full" : "w-0 group-hover:w-full"
-              }`}
-            />
-          </Link>
+          {NAVBAR_LINKS.map((link) => (
+            <Link
+              key={link.route}
+              href={link.route}
+              className="text-gray-300 hover:text-gray-100 transition-colors duration-300 relative group flex items-center gap-1"
+              aria-label={link.name}
+            >
+              {link.icon}
+              {link.name}
+              <span
+                className={`absolute -bottom-1 left-0 h-0.5 bg-gray-300 transition-all duration-300 ${
+                  pathName === link.route ||
+                  (link.route.startsWith("/trips") &&
+                    pathName.startsWith("/trips"))
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
+                }`}
+              />
+            </Link>
+          ))}
         </nav>
       </div>
     </header>

@@ -1,12 +1,8 @@
+import { Places } from "@/types";
 import DynamicMap from "@/components/Map/DynamicImport";
-import { MapProps } from "@/components/Map";
 
-const PlaceTemplate = ({ places }: MapProps) => {
-  return (
-    <>
-      <DynamicMap places={places} />
-    </>
-  );
+const PlaceTemplate = ({ places }: Places) => {
+  return <DynamicMap places={places} />;
 };
 
 export default PlaceTemplate;

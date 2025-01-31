@@ -1,1 +1,1 @@
-My personal website made with next
+## I was too lazy to do it, I’ll update it soon.

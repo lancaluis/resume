@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 import { Skill } from "@/types";
-import { Icons } from "@/constants/icons";
+import { ICONS } from "@/constants";
 
 interface SkillsCarouselProps {
   skills: Skill[];
@@ -35,8 +35,8 @@ const SkillsCarousel = ({
         >
           <div className="p-4">
             <div className="flex items-center mb-1">
-              {Icons[skill.icon as keyof typeof Icons] &&
-                React.createElement(Icons[skill.icon as keyof typeof Icons], {
+              {ICONS[skill.icon as keyof typeof ICONS] &&
+                React.createElement(ICONS[skill.icon as keyof typeof ICONS], {
                   className: `h-6 w-6 mr-2 ${skill.style}`,
                 })}
               <h3 className="text-lg font-bold text-gray-300">{skill.name}</h3>

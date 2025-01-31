@@ -1,11 +1,18 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { TIMELINE } from "@/content/timeline";
 
-const TimelineItem = ({ item, index }: { item: { title: string; description: string; year: string}; index: number }) => {
+import { TIMELINE } from "@/constants";
+import { TimelineItem as Item } from "@/types";
+
+interface TimelineItemProps {
+  item: Item;
+  index: number;
+}
+
+const TimelineItem = ({ item, index }: TimelineItemProps) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -46,8 +53,9 @@ const TimelineItem = ({ item, index }: { item: { title: string; description: str
         </svg>
       </div>
       <div
-        className={`${index % 2 === 0 ? "timeline-start md:text-end" : "timeline-end"
-          } pb-8`}
+        className={`${
+          index % 2 === 0 ? "timeline-start md:text-end" : "timeline-end"
+        } pb-8`}
       >
         <time className="font-mono italic text-gray-200">{item.year}</time>
         <div className="text-lg font-black text-gray-200">{item.title}</div>

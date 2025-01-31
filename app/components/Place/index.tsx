@@ -1,26 +1,10 @@
-import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-type ImageProps = {
-  url: string;
-  width: number;
-  height: number;
-};
+import { PlaceTemplate as PlaceTemplateProps } from "@/types";
+import { ArrowLeft } from "lucide-react";
 
-export type PlaceTemplateProps = {
-  place: {
-    slug: string;
-    title: string;
-    subtitle: string;
-    content: {
-      html: string;
-    };
-    gallery: ImageProps[];
-  };
-};
-
-export default function PlaceComponent({ place }: PlaceTemplateProps) {
+export default function PlaceTemplate({ place }: PlaceTemplateProps) {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
       <section className="relative z-10 flex flex-col items-center max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">

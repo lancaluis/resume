@@ -1,17 +1,38 @@
-export interface Skill {
+export type Skill = {
   name: string;
   icon: string;
-  style: string
+  style: string;
   description: string;
-}
+};
 
-export interface Client {
+export type TimelineItem = {
+  year: string;
+  title: string;
+  description: string;
+};
+
+export type PlaceTemplate = {
+  place: {
+    slug: string;
+    title: string;
+    subtitle: string;
+    content: {
+      html: string;
+    };
+    gallery: [{ url: string; width: number; height: number }];
+  };
+};
+
+export type Place = {
   id: number;
-  client: string;
-  short_description: string;
-  project_type: string;
-  images: string[];
-  problem_description: string;
-  solution: string;
-  client_website: string;
-}
+  title: string;
+  slug: string;
+  location: {
+    latitude: number;
+    longitude: number;
+  };
+};
+
+export type Places = {
+  places: Place[];
+};

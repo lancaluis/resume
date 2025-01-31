@@ -1,24 +1,12 @@
 import { useRouter } from "next/navigation";
 
-import { MapContainer, TileLayer, Marker } from "react-leaflet";
+import { Places } from "@/types";
+
 import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { MapContainer, TileLayer, Marker } from "react-leaflet";
 
-export type Place = {
-  id: number;
-  name: string;
-  slug: string;
-  location: {
-    latitude: number;
-    longitude: number;
-  };
-};
-
-export type MapProps = {
-  places?: Place[];
-};
-
-export const Map = ({ places }: MapProps) => {
+export const Map = ({ places }: Places) => {
   const router = useRouter();
 
   const mapMarkIcon = new Icon({
@@ -47,7 +35,7 @@ export const Map = ({ places }: MapProps) => {
       >
         <TileLayer url="https://mt0.google.com/vt/lyrs=m&hl=en&x={x}&y={y}&z={z}" />
 
-        {places?.map(({ id, name, location, slug }) => {
+        {places?.map(({ id, title, location, slug }) => {
           const { latitude, longitude } = location;
 
           return (
@@ -55,7 +43,7 @@ export const Map = ({ places }: MapProps) => {
               key={`place-${id}`}
               icon={mapMarkIcon}
               position={[latitude, longitude]}
-              title={name}
+              title={title}
               eventHandlers={{
                 click: () => {
                   router.push(`/trips/${slug}`);

@@ -27,9 +27,9 @@ export default function RootLayout({
     <html lang="en">
       <Analytics />
       <SpeedInsights />
-      <body className={`${geistMono.variable} bg-gray-900`}>
+      <body className={`${geistMono.variable} bg-gray-900 h-screen flex flex-col`}>
         <Header />
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>

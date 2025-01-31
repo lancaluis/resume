@@ -2,7 +2,7 @@ import { Github, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-base-100">
+    <footer className="border-t border-base-100 bg-gray-900">
       <div className="flex flex-col sm:flex-row justify-around items-center py-8">
         <p className="text-sm text-gray-300 mb-4 sm:mb-0">
           {new Date().getFullYear()} &copy; Luís Lança
