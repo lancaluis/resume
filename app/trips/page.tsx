@@ -4,10 +4,6 @@ import { getPlaces } from "@/services/hygraph";
 const Trips = async () => {
   const { places } = await getPlaces();
 
-  if (!places) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <div className="container mx-auto my-8">
       <div className="flex flex-col items-center mb-4 justify-center">
@@ -22,3 +18,4 @@ const Trips = async () => {
 };
 
 export default Trips;
+export const revalidate = 60;
