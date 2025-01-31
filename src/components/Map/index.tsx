@@ -17,9 +17,9 @@ export const Map = ({ places }: Places) => {
   return (
     <div className="w-full h-[70vh]">
       <MapContainer
-        center={[-8.7832, -55.4915]}
-        zoom={3}
-        minZoom={3}
+        center={[0, 0]}
+        zoom={2}
+        minZoom={2}
         zoomControl={true}
         attributionControl={false}
         maxBounds={[
