@@ -7,7 +7,7 @@ export async function getPlaces() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.NEXT_HYGRAPH_TOKEN}`
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_HYGRAPH_TOKEN}`
       },
       body: JSON.stringify({
         query: GET_PLACES
@@ -25,7 +25,7 @@ export async function getPlaceBySlug(slug: string) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.NEXT_HYGRAPH_TOKEN}`
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_HYGRAPH_TOKEN}`
       },
       body: JSON.stringify({
         query: GET_PLACE_BY_SLUG,
