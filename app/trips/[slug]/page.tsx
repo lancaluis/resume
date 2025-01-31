@@ -6,5 +6,9 @@ export default async function Place({ params }: { params: { slug: string } }) {
 
   const { place } = await getPlaceBySlug(slug);
 
+  if (!place) {
+    return <div>Place not found</div>;
+  }
+
   return <PlaceComponent place={place} />;
 }
