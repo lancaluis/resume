@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { PlaceTemplate as PlaceTemplateProps } from "../../types";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, CameraOffIcon } from "lucide-react";
 
 export default function PlaceTemplate({ place }: PlaceTemplateProps) {
   return (
@@ -28,6 +28,24 @@ export default function PlaceTemplate({ place }: PlaceTemplateProps) {
           </div>
 
           <div dangerouslySetInnerHTML={{ __html: place.content.html }} />
+
+          {!place.gallery.length && (
+            <div className="flex flex-col items-center gap-2 self-center">
+              <CameraOffIcon className="w-12 h-12 text-gray-400" />
+              <p className="text-gray-400 font-bold text-2xl">No images yet</p>
+              <p className="text-gray-400">
+                You can check some of them on&nbsp;
+                <Link
+                  href="https://unsplash.com/@nopiqueviajante"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-gray-200 underline"
+                >
+                  Unsplash
+                </Link>
+              </p>
+            </div>
+          )}
 
           <div
             className={`grid gap-6 ${
