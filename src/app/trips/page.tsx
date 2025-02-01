@@ -3,9 +3,6 @@ import { Metadata } from "next";
 import { getPlaces } from "@/services/hygraph";
 import PlaceTemplate from "@/components/Map/MapWrapper";
 
-import { TbFlipFlops } from "react-icons/tb";
-import { LiaSimCardSolid } from "react-icons/lia";
-import { Globe2, Map, PlaneTakeoffIcon } from "lucide-react";
 import { TRAVEL_INFO } from "@/constants/travelInfo";
 
 export const metadata: Metadata = {
