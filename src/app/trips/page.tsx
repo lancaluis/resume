@@ -1,10 +1,17 @@
-import PlaceTemplate from "@/components/Map/MapWrapper";
-import { getPlaces } from "@/services/hygraph";
 import { Metadata } from "next";
+
+import { getPlaces } from "@/services/hygraph";
+import PlaceTemplate from "@/components/Map/MapWrapper";
+
+import { TbFlipFlops } from "react-icons/tb";
+import { LiaSimCardSolid } from "react-icons/lia";
+import { Globe2, Map, PlaneTakeoffIcon } from "lucide-react";
+import { TRAVEL_INFO } from "@/constants/travelInfo";
 
 export const metadata: Metadata = {
   title: "Luís Lança - Travel Journal & Digital Nomad Adventures",
-  description: "Exploring the world while working remotely. Travel journal, digital nomad lifestyle, and remote work insights.",
+  description:
+    "Exploring the world while working remotely. Travel journal, digital nomad lifestyle, and remote work insights.",
 };
 
 const Trips = async () => {
@@ -12,11 +19,22 @@ const Trips = async () => {
 
   return (
     <div className="container mx-auto my-8">
-      <div className="flex flex-col items-center mb-4 justify-center">
+      <div className="flex flex-col items-center mb-6 justify-center">
         <h1 className="text-2xl font-bold text-gray-200">Trips</h1>
         <p className="text-gray-300">Choose a place and travel with me</p>
       </div>
-      <div className="border border-base-100 p-4 2px rounded-md h-[calc(100vh-14rem)]">
+      <div className="flex flex-col mx-4 rounded-md border-outline border border-base-100">
+        <div className="gap-4 items-center justify-around my-4 p-4 xl:flex hidden">
+          {TRAVEL_INFO.map((info, index) => (
+            <div key={index} className="flex gap-4 items-center">
+              {info.icon}
+              <div>
+                <p className="text-gray-300 text-4xl font-bold">{info.number}</p>
+                <p className="text-gray-300 text-xl">{info.title}</p>
+              </div>
+            </div>
+          ))}
+        </div>
         <PlaceTemplate places={places} />
       </div>
     </div>

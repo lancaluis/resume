@@ -15,7 +15,7 @@ export const Map = ({ places }: Places) => {
   });
 
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-[calc(100vh-14rem)]">
       <MapContainer
         center={[0, 0]}
         zoom={2}
