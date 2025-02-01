@@ -1,6 +1,6 @@
 import { useRouter } from "next/navigation";
 
-import { Places } from "../../types";
+import { Places } from "@/types";
 
 import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -18,8 +18,8 @@ export const Map = ({ places }: Places) => {
     <div className="w-full h-[70vh]">
       <MapContainer
         center={[0, 0]}
-        zoom={2}
-        minZoom={2}
+        zoom={3}
+        minZoom={3}
         zoomControl={true}
         attributionControl={false}
         maxBounds={[

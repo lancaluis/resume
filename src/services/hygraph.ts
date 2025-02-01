@@ -6,7 +6,7 @@ export const hygraph = new GraphQLClient(HYGRAPH_API);
 export const getPlaces = async () => {
   const query = `
   query GetPlaces{
-    places {
+    places(first: 100) {
       id
       slug
       title
