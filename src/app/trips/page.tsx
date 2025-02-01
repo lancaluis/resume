@@ -16,7 +16,7 @@ const Trips = async () => {
         <h1 className="text-2xl font-bold text-gray-200">Trips</h1>
         <p className="text-gray-300">Choose a place and travel with me</p>
       </div>
-      <div className="border border-base-100 p-4 2px rounded-md">
+      <div className="border border-base-100 p-4 2px rounded-md h-[calc(100vh-14rem)]">
         <PlaceTemplate places={places} />
       </div>
     </div>

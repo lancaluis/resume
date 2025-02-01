@@ -49,7 +49,7 @@ const About = () => {
           <span className="font-bold text-gray-300">
             strong focus on usability, performance, and scalable solutions
           </span>
-          . My approach goes beyond just building products; I’m deeply invested in their evolution,
+          .My approach goes beyond just building products; I’m deeply invested in their evolution,
           analyzing post-launch performance, improving SEO, and ensuring continuous enhancements to
           meet user needs.
         </p>

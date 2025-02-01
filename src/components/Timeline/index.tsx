@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import { TIMELINE } from "../../constants";
-import { TimelineItem as Item } from "../../types";
+import { TIMELINE } from "@/constants";
+import { TimelineItem as Item } from "@/types";
 
 interface TimelineItemProps {
   item: Item;
@@ -14,10 +14,16 @@ interface TimelineItemProps {
 
 const TimelineItem = ({ item, index }: TimelineItemProps) => {
   const controls = useAnimation();
+  const [isMobile, setIsMobile] = useState(false);
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
+
+  const variants = {
+    hidden: { opacity: 0, x: index % 2 === 0 ? -100 : 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
+  };
 
   useEffect(() => {
     if (inView) {
@@ -25,16 +31,27 @@ const TimelineItem = ({ item, index }: TimelineItemProps) => {
     }
   }, [controls, inView]);
 
-  const variants = {
-    hidden: { opacity: 0, x: index % 2 === 0 ? -100 : 100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } },
-  };
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  useEffect(() => {
+    if (inView && !isMobile) {
+      controls.start("visible");
+    }
+  }, [controls, inView, isMobile]);
 
   return (
     <motion.li
       ref={ref}
-      initial="hidden"
-      animate={controls}
+      initial={isMobile ? "visible" : "hidden"}
+      animate={isMobile ? "visible" : controls}
       variants={variants}
       className="-mb-2"
     >
