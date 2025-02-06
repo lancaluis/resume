@@ -26,8 +26,8 @@ const Trips = async () => {
             <div key={index} className="flex gap-4 items-center">
               {info.icon}
               <div>
-                <p className="text-gray-300 text-3xl font-bold">{info.number}</p>
-                <p className="text-gray-300 text-xl">{info.title}</p>
+                <p className="text-gray-300 text-2xl font-bold">{info.number}</p>
+                <p className="text-gray-300 text-md">{info.title}</p>
               </div>
             </div>
           ))}

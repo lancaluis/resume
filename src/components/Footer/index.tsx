@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -31,6 +31,14 @@ const Footer = () => {
             className="text-gray-300 hover:text-gray-200"
           >
             <Instagram className="h-6 w-6" />
+          </a>
+          <a
+            href="https://www.youtube.com/@nopiqueviajante"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-gray-200"
+          >
+            <Youtube className="h-6 w-6" />
           </a>
         </div>
       </div>

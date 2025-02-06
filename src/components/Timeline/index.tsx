@@ -85,7 +85,7 @@ const TimelineItem = ({ item, index }: TimelineItemProps) => {
 
 const Timeline = () => {
   return (
-    <div className="max-w-4xl mx-auto px-6">
+    <div className="max-w-full mx-auto px-6">
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {TIMELINE.map((item, index) => (
           <TimelineItem key={index} item={item} index={index} />

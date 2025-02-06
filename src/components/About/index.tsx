@@ -35,7 +35,7 @@ const FadeInWhenVisible = ({ children }: { children: React.ReactNode }) => {
 
 const About = () => {
   return (
-    <section id="about" className="max-w-4xl mx-auto px-6">
+    <section id="about" className="max-w-5xl mx-auto px-6">
       <FadeInWhenVisible>
         <h2 className="text-3xl font-bold mb-8 text-center text-gray-200">About me</h2>
       </FadeInWhenVisible>

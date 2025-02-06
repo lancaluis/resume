@@ -3,13 +3,13 @@ export const TIMELINE = [
     year: "2025",
     title: "Career Growth",
     description:
-      "Aiming to speak at digital nomad events worldwide, exploring new opportunities, and focusing on performance and creating innovative products to transform lives through technology",
+      "Focused on advancing my career while expanding my knowledge beyond software engineering into product development. I aspire to become a global speaker, sharing insights on the nomadic life as a software engineer, and embracing my passion for trekking around the world",
   },
   {
     year: "2023",
-    title: "Tech & Event Industry Innovation",
+    title: "New Language & Global Impact",
     description:
-      "Returned to Brazil and started transforming the events industry through technology, contributing to major projects for the global expansion of a ticketing platform",
+      "Faced many challenges this year, where I learned Spanish, took part in major projects involving Brazilian football, contributed to the international expansion of a ticketing platform in Brazil, and went on many trekking adventures across South America",
   },
   {
     year: "2022",
