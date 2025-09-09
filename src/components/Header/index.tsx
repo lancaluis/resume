@@ -32,6 +32,7 @@ const Header = () => {
               />
             </Link>
           ))}
+          <a href="https://blog.luislanca.com" className="text-gray-300 hover:text-gray-100 transition-colors duration-300 relative group flex items-center gap-1" aria-label="blog" target="_blank" rel="noopener noreferrer">Blog</a>
         </nav>
       </div>
     </header>
